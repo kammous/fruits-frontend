@@ -51,3 +51,9 @@ Then you just have to open a new browser tab to `http://localhost:4200` and see 
 Calling the UI and adding more fruits invokes the API exposed by the [backend component](./backend/README.md).
 
 Just be sure you also run the backend component for full integration tests ;-)
+
+### Build container
+docker build . -t fruits-frontend
+
+### Run container
+docker run --name fruits-frontend -d -p 8080:80 fruits-frontend
